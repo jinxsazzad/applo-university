@@ -1,4 +1,5 @@
 "use client";
+import Hero from "@/components/homepage/Hero";
 import React, { useState } from "react";
 import { Fa42Group, FaFaceAngry, FaUser } from "react-icons/fa6";
 
@@ -62,383 +63,390 @@ const tabs = [
 const Home = () => {
   const [activeTab, setActiveTab] = useState(tabs[0]);
   return (
-    <div>
-      <div className="flex flex-col md:flex-row md:gap-5 justify-between items-center md:p-5">
-        <div className="border-x-4 border-indigo-500 px-4 text-center">
-          <h2>hello</h2>
-          <h3 className="text-4xl font-semibold">Admission</h3>
-          <p className="text-lg">
-            We have students coming from different backgrounds, cultures, and
-            nationalities as well. More than 500 international students are
-            enrolled in various programs.
-          </p>
-        </div>
-        <div className="border-x-4 border-indigo-500 px-4 text-center">
-          <h2>hello</h2>
-          <h3 className="text-4xl font-semibold">Admission</h3>
-          <p className="text-lg">
-            We have students coming from different backgrounds, cultures, and
-            nationalities as well. More than 500 international students are
-            enrolled in various programs.
-          </p>
-        </div>
-        <div className="border-x-4 border-indigo-500 px-4 text-center">
-          <h2>hello</h2>
-          <h3 className="text-4xl font-semibold">Admission</h3>
-          <p className="text-lg">
-            We have students coming from different backgrounds, cultures, and
-            nationalities as well. More than 500 international students are
-            enrolled in various programs.
-          </p>
-        </div>
-        <div className="border-x-4 border-indigo-500 px-4 text-center">
-          <h2>hello</h2>
-          <h3 className="text-4xl font-semibold">Admission</h3>
-          <p className="text-lg">
-            We have students coming from different backgrounds, cultures, and
-            nationalities as well. More than 500 international students are
-            enrolled in various programs.
-          </p>
-        </div>
-      </div>
-      {/* What we offer */}
-      <div className="flex justify-between items-center flex-col md:flex-row gap-4">
-        <div className="w-3/5">
-          <div>
-            <h2>What We offer</h2>
-            <p>
-              At Daffodil International University, students get the opportunity
-              to think, learn and grow.
+    <>
+      <section>
+        <Hero/>
+      </section>
+      <div>
+        <div className="flex flex-col md:flex-row md:gap-5 justify-between items-center md:p-5">
+          <div className="border-x-4 border-indigo-500 px-4 text-center">
+            <h2>hello</h2>
+            <h3 className="text-4xl font-semibold">Admission</h3>
+            <p className="text-lg">
+              We have students coming from different backgrounds, cultures, and
+              nationalities as well. More than 500 international students are
+              enrolled in various programs.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 p-5">
-            <div className="flex justify-between items-start gap-5">
-              <div className="bg-slate-400 rounded-full p-5">
-                <FaUser className="text-4xl" />
-              </div>
-              <div>
-                <h1 className="text-4xl font-semibold">Accommodation</h1>
-                <p>
-                  We are providing a secure and convenient living facility for
-                  our students. DIU dormitories are a home away from home...
-                </p>
-              </div>
+          <div className="border-x-4 border-indigo-500 px-4 text-center">
+            <h2>hello</h2>
+            <h3 className="text-4xl font-semibold">Admission</h3>
+            <p className="text-lg">
+              We have students coming from different backgrounds, cultures, and
+              nationalities as well. More than 500 international students are
+              enrolled in various programs.
+            </p>
+          </div>
+          <div className="border-x-4 border-indigo-500 px-4 text-center">
+            <h2>hello</h2>
+            <h3 className="text-4xl font-semibold">Admission</h3>
+            <p className="text-lg">
+              We have students coming from different backgrounds, cultures, and
+              nationalities as well. More than 500 international students are
+              enrolled in various programs.
+            </p>
+          </div>
+          <div className="border-x-4 border-indigo-500 px-4 text-center">
+            <h2>hello</h2>
+            <h3 className="text-4xl font-semibold">Admission</h3>
+            <p className="text-lg">
+              We have students coming from different backgrounds, cultures, and
+              nationalities as well. More than 500 international students are
+              enrolled in various programs.
+            </p>
+          </div>
+        </div>
+        {/* What we offer */}
+        <div className="flex justify-between items-center flex-col md:flex-row gap-4">
+          <div className="w-3/5">
+            <div>
+              <h2>What We offer</h2>
+              <p>
+                At Daffodil International University, students get the
+                opportunity to think, learn and grow.
+              </p>
             </div>
-            <div className="flex justify-between items-start gap-5">
-              <div className="bg-slate-400 rounded-full p-5">
-                <FaUser className="text-4xl" />
+            <div className="grid grid-cols-1 md:grid-cols-2 p-5">
+              <div className="flex justify-between items-start gap-5">
+                <div className="bg-slate-400 rounded-full p-5">
+                  <FaUser className="text-4xl" />
+                </div>
+                <div>
+                  <h1 className="text-4xl font-semibold">Accommodation</h1>
+                  <p>
+                    We are providing a secure and convenient living facility for
+                    our students. DIU dormitories are a home away from home...
+                  </p>
+                </div>
               </div>
-              <div>
-                <h1 className="text-4xl font-semibold">Accommodation</h1>
-                <p>
-                  We are providing a secure and convenient living facility for
-                  our students. DIU dormitories are a home away from home...
-                </p>
+              <div className="flex justify-between items-start gap-5">
+                <div className="bg-slate-400 rounded-full p-5">
+                  <FaUser className="text-4xl" />
+                </div>
+                <div>
+                  <h1 className="text-4xl font-semibold">Accommodation</h1>
+                  <p>
+                    We are providing a secure and convenient living facility for
+                    our students. DIU dormitories are a home away from home...
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="flex justify-between items-start gap-5">
-              <div className="bg-slate-400 rounded-full p-5">
-                <FaUser className="text-4xl" />
+              <div className="flex justify-between items-start gap-5">
+                <div className="bg-slate-400 rounded-full p-5">
+                  <FaUser className="text-4xl" />
+                </div>
+                <div>
+                  <h1 className="text-4xl font-semibold">Accommodation</h1>
+                  <p>
+                    We are providing a secure and convenient living facility for
+                    our students. DIU dormitories are a home away from home...
+                  </p>
+                </div>
               </div>
-              <div>
-                <h1 className="text-4xl font-semibold">Accommodation</h1>
-                <p>
-                  We are providing a secure and convenient living facility for
-                  our students. DIU dormitories are a home away from home...
-                </p>
+              <div className="flex justify-between items-start gap-5">
+                <div className="bg-slate-400 rounded-full p-5">
+                  <FaUser className="text-4xl" />
+                </div>
+                <div>
+                  <h1 className="text-4xl font-semibold">Accommodation</h1>
+                  <p>
+                    We are providing a secure and convenient living facility for
+                    our students. DIU dormitories are a home away from home...
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="flex justify-between items-start gap-5">
-              <div className="bg-slate-400 rounded-full p-5">
-                <FaUser className="text-4xl" />
+              <div className="flex justify-between items-start gap-5">
+                <div className="bg-slate-400 rounded-full p-5">
+                  <FaUser className="text-4xl" />
+                </div>
+                <div>
+                  <h1 className="text-4xl font-semibold">Accommodation</h1>
+                  <p>
+                    We are providing a secure and convenient living facility for
+                    our students. DIU dormitories are a home away from home...
+                  </p>
+                </div>
               </div>
-              <div>
-                <h1 className="text-4xl font-semibold">Accommodation</h1>
-                <p>
-                  We are providing a secure and convenient living facility for
-                  our students. DIU dormitories are a home away from home...
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-between items-start gap-5">
-              <div className="bg-slate-400 rounded-full p-5">
-                <FaUser className="text-4xl" />
-              </div>
-              <div>
-                <h1 className="text-4xl font-semibold">Accommodation</h1>
-                <p>
-                  We are providing a secure and convenient living facility for
-                  our students. DIU dormitories are a home away from home...
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-between items-start gap-5">
-              <div className="bg-slate-400 rounded-full p-5">
-                <FaUser className="text-4xl" />
-              </div>
-              <div>
-                <h1 className="text-4xl font-semibold">Accommodation</h1>
-                <p>
-                  We are providing a secure and convenient living facility for
-                  our students. DIU dormitories are a home away from home...
-                </p>
+              <div className="flex justify-between items-start gap-5">
+                <div className="bg-slate-400 rounded-full p-5">
+                  <FaUser className="text-4xl" />
+                </div>
+                <div>
+                  <h1 className="text-4xl font-semibold">Accommodation</h1>
+                  <p>
+                    We are providing a secure and convenient living facility for
+                    our students. DIU dormitories are a home away from home...
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+          <div
+            className="bg-cover bg-no-repeat bg-center w-full md:w-2/5"
+            style={{
+              backgroundImage: `url('http://kodeforest.net/html/uoe/extra-images/bg-1.jpg')`,
+              height: "100vh", // Set the height as needed
+            }}
+          >
+            {/* Your content goes here */}
+          </div>
         </div>
+        {/* Secation 3 */}
         <div
-          className="bg-cover bg-no-repeat bg-center w-full md:w-2/5"
+          className="relative h-screen flex items-center justify-center bg-fixed bg-center bg-no-repeat bg-cover"
           style={{
-            backgroundImage: `url('http://kodeforest.net/html/uoe/extra-images/bg-1.jpg')`,
-            height: "100vh", // Set the height as needed
+            backgroundImage:
+              "url('http://kodeforest.net/html/uoe/extra-images/bg-1.jpg')",
           }}
         >
-          {/* Your content goes here */}
-        </div>
-      </div>
-      {/* Secation 3 */}
-      <div
-        className="relative h-screen flex items-center justify-center bg-fixed bg-center bg-no-repeat bg-cover"
-        style={{
-          backgroundImage:
-            "url('http://kodeforest.net/html/uoe/extra-images/bg-1.jpg')",
-        }}
-      >
-        {/* Overlay with gradient color */}
-        <div className="absolute inset-0 bg-gray-600 bg-opacity-50"></div>
+          {/* Overlay with gradient color */}
+          <div className="absolute inset-0 bg-gray-600 bg-opacity-50"></div>
 
-        <div className="relative z-10 text-white text-center">
-          <div className="mt-8 flex items-center justify-center w-3/4 mx-auto">
-            <div className="flex justify-center items-center gap-4">
-              {/* First part */}
-              <div className="w-full h-fit">
-                {/* Video goes here */}
-                <iframe
-                  className=""
-                  src="https://www.youtube.com/embed/your-video-id"
-                  title="Video"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </div>
+          <div className="relative z-10 text-white text-center">
+            <div className="mt-8 flex items-center justify-center w-3/4 mx-auto">
+              <div className="flex justify-center items-center gap-4">
+                {/* First part */}
+                <div className="w-full h-fit">
+                  {/* Video goes here */}
+                  <iframe
+                    className=""
+                    src="https://www.youtube.com/embed/your-video-id"
+                    title="Video"
+                    frameborder="0"
+                    allowfullscreen
+                  ></iframe>
+                </div>
 
-              <div className="">
-                <h2 className="text-4xl font-bold mb-4">Parallax Section</h2>
-                <p className="text-lg">
-                  Being established in 2002, Daffodil International University
-                  has become a prominent private university in Bangladesh. Our
-                  150 Acre campus is full of life and positive energy, fostering
-                  education and innovation for more than 20000 students. Here,
-                  students are encouraged to ask questions and think, debate and
-                  collaborate with professors to take ownership of their
-                  learning.
-                </p>
+                <div className="">
+                  <h2 className="text-4xl font-bold mb-4">Parallax Section</h2>
+                  <p className="text-lg">
+                    Being established in 2002, Daffodil International University
+                    has become a prominent private university in Bangladesh. Our
+                    150 Acre campus is full of life and positive energy,
+                    fostering education and innovation for more than 20000
+                    students. Here, students are encouraged to ask questions and
+                    think, debate and collaborate with professors to take
+                    ownership of their learning.
+                  </p>
+                </div>
               </div>
+            </div>
+            <div>
+              <div className=" flex justify-center items-center  gap-16">
+                <div className="px-40">
+                  <h2 className="text-3xl font-semibold">100</h2>
+                  <p>Counter</p>
+                </div>
+                <div className="px-40">
+                  <h2 className="text-3xl font-semibold">100</h2>
+                  <p>Counter</p>
+                </div>
+                <div className="px-40">
+                  <h2 className="text-3xl font-semibold">100</h2>
+                  <p>Counter</p>
+                </div>
+              </div>
+              <button className="btn btn-primary">Hello</button>
             </div>
           </div>
-          <div>
-            <div className=" flex justify-center items-center  gap-16">
-              <div className="px-40">
-                <h2 className="text-3xl font-semibold">100</h2>
-                <p>Counter</p>
-              </div>
-              <div className="px-40">
-                <h2 className="text-3xl font-semibold">100</h2>
-                <p>Counter</p>
-              </div>
-              <div className="px-40">
-                <h2 className="text-3xl font-semibold">100</h2>
-                <p>Counter</p>
-              </div>
-            </div>
-            <button className="btn btn-primary">Hello</button>
+        </div>
+        {/* Section 4 */}
+        <div>
+          <h1 className="text-center font-bold text-4xl">Our Faculties</h1>
+          <div className="flex flex-wrap gap-10 mx-auto w-[90%]">
+            {facultyData.map((faculty) => (
+              <>
+                <div className="card w-96 bg-base-100 shadow-md hover:shadow-xl relative">
+                  <div className="h-20 bg-gray-400 z-50 absolute mt-28 end-0">
+                    {faculty?.date}
+                  </div>
+                  <figure className="relative">
+                    <img src={faculty.imgurl} alt="Shoes" />
+                  </figure>
+                  <div className="card-body">
+                    <h2 className="card-title">{faculty.name}</h2>
+                    <p>{faculty.description}</p>
+                    <div className="card-actions">
+                      <button className="btn btn-primary">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </>
+            ))}
           </div>
         </div>
-      </div>
-      {/* Section 4 */}
-      <div>
-        <h1 className="text-center font-bold text-4xl">Our Faculties</h1>
-        <div className="flex flex-wrap gap-10 mx-auto w-[90%]">
-          {facultyData.map((faculty) => (
-            <>
-              <div className="card w-96 bg-base-100 shadow-md hover:shadow-xl relative">
-                <div className="h-20 bg-gray-400 z-50 absolute mt-28 end-0">
-                  {faculty?.date}
-                </div>
-                <figure className="relative">
-                  <img src={faculty.imgurl} alt="Shoes" />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">{faculty.name}</h2>
-                  <p>{faculty.description}</p>
-                  <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
+        {/* Section 5 */}
+        <div>
+          <h1 className="text-center font-bold text-4xl">Our Faculties</h1>
+          <div className="flex flex-wrap gap-10 mx-auto w-[90%]">
+            {facultyData.map((faculty) => (
+              <>
+                <div className="card w-96 bg-base-100 shadow-md hover:shadow-xl relative">
+                  <div className="h-20 bg-gray-400 z-50 absolute mt-28 end-0">
+                    {faculty?.date}
+                  </div>
+                  <figure className="relative">
+                    <img src={faculty.imgurl} alt="Shoes" />
+                  </figure>
+                  <div className="card-body">
+                    <h2 className="card-title">{faculty.name}</h2>
+                    <p>{faculty.description}</p>
+                    <div className="card-actions">
+                      <button className="btn btn-primary">Buy Now</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </>
-          ))}
+              </>
+            ))}
+          </div>
         </div>
-      </div>
-      {/* Section 5 */}
-      <div>
-        <h1 className="text-center font-bold text-4xl">Our Faculties</h1>
-        <div className="flex flex-wrap gap-10 mx-auto w-[90%]">
-          {facultyData.map((faculty) => (
-            <>
-              <div className="card w-96 bg-base-100 shadow-md hover:shadow-xl relative">
-                <div className="h-20 bg-gray-400 z-50 absolute mt-28 end-0">
-                  {faculty?.date}
-                </div>
-                <figure className="relative">
-                  <img src={faculty.imgurl} alt="Shoes" />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">{faculty.name}</h2>
-                  <p>{faculty.description}</p>
-                  <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
-                  </div>
+        <div>
+          <div className="py-10 bg-gray-100">
+            <div className="max-w-screen-lg mx-auto">
+              <div className="flex justify-center mb-8">
+                <div className="flex space-x-4">
+                  {tabs.map((tab) => (
+                    <button
+                      key={tab.id}
+                      className={`tab-btn ${
+                        activeTab.id === tab.id ? "tab-active" : ""
+                      }`}
+                      onClick={() => setActiveTab(tab)}
+                    >
+                      {tab.title}
+                    </button>
+                  ))}
                 </div>
               </div>
-            </>
-          ))}
-        </div>
-      </div>
-      <div>
-        <div className="py-10 bg-gray-100">
-          <div className="max-w-screen-lg mx-auto">
-            <div className="flex justify-center mb-8">
-              <div className="flex space-x-4">
-                {tabs.map((tab) => (
-                  <button
-                    key={tab.id}
-                    className={`tab-btn ${
-                      activeTab.id === tab.id ? "tab-active" : ""
-                    }`}
-                    onClick={() => setActiveTab(tab)}
-                  >
-                    {tab.title}
-                  </button>
-                ))}
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-2xl font-bold mb-4">{activeTab.title}</h3>
-              {activeTab.id === 1 && (
-                <div className="flex flex-wrap gap-10">
-                  {facultyData.map((faculty) => (
-                    <div key={faculty.id}>
-                      <div className="card w-96 bg-base-100 shadow-md hover:shadow-xl relative">
-                        <div className="h-20 bg-gray-400 z-50 absolute mt-28 end-0">
-                          {faculty?.date}
-                        </div>
-                        <figure className="relative">
-                          <img src={faculty.imgurl} alt="Shoes" />
-                        </figure>
-                        <div className="card-body">
-                          <h2 className="card-title">{faculty.name}</h2>
-                          <p>{faculty.description}</p>
-                          <div className="card-actions">
-                            <button className="btn btn-primary">Buy Now</button>
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h3 className="text-2xl font-bold mb-4">{activeTab.title}</h3>
+                {activeTab.id === 1 && (
+                  <div className="flex flex-wrap gap-10">
+                    {facultyData.map((faculty) => (
+                      <div key={faculty.id}>
+                        <div className="card w-96 bg-base-100 shadow-md hover:shadow-xl relative">
+                          <div className="h-20 bg-gray-400 z-50 absolute mt-28 end-0">
+                            {faculty?.date}
+                          </div>
+                          <figure className="relative">
+                            <img src={faculty.imgurl} alt="Shoes" />
+                          </figure>
+                          <div className="card-body">
+                            <h2 className="card-title">{faculty.name}</h2>
+                            <p>{faculty.description}</p>
+                            <div className="card-actions">
+                              <button className="btn btn-primary">
+                                Buy Now
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-              {activeTab.id === 2 && (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {facultyData.map((faculty) => (
-                    <div
-                      key={faculty.id}
-                      className="bg-white rounded-lg shadow-md p-4"
-                    >
-                      {/* Faculty card content */}
-                    </div>
-                  ))}
-                </div>
-              )}
-              {activeTab.id === 3 && (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {facultyData.map((faculty) => (
-                    <div
-                      key={faculty.id}
-                      className="bg-white rounded-lg shadow-md p-4"
-                    >
-                      {/* Faculty card content */}
-                    </div>
-                  ))}
-                </div>
-              )}
+                    ))}
+                  </div>
+                )}
+                {activeTab.id === 2 && (
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {facultyData.map((faculty) => (
+                      <div
+                        key={faculty.id}
+                        className="bg-white rounded-lg shadow-md p-4"
+                      >
+                        {/* Faculty card content */}
+                      </div>
+                    ))}
+                  </div>
+                )}
+                {activeTab.id === 3 && (
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {facultyData.map((faculty) => (
+                      <div
+                        key={faculty.id}
+                        className="bg-white rounded-lg shadow-md p-4"
+                      >
+                        {/* Faculty card content */}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-between items-center p-10">
+          <div>
+            <div className="flex">
+              <div>
+                <h1>
+                  <span className="text-9xl text-[#D2D2D2]">03</span> DEC
+                </h1>
+                <p>lsdafjldskfldaksfklasdfklsdjflk</p>
+                <p>ksdfalkjl;</p>
+                <button>Read More</button>
+              </div>
+              <img
+                src="http://kodeforest.net/html/uoe/extra-images/news1.jpg"
+                alt=""
+              />
+            </div>
+            <div className="flex">
+              <div>
+                <h1>
+                  <span className="text-9xl text-[#D2D2D2]">03</span> DEC
+                </h1>
+                <p>lsdafjldskfldaksfklasdfklsdjflk</p>
+                <p>ksdfalkjl;</p>
+                <button>Read More</button>
+              </div>
+              <img
+                src="http://kodeforest.net/html/uoe/extra-images/news1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div>
+            <div className="flex">
+              <div>
+                <h1>
+                  <span className="text-9xl text-[#D2D2D2]">03</span> DEC
+                </h1>
+                <p>lsdafjldskfldaksfklasdfklsdjflk</p>
+                <p>ksdfalkjl;</p>
+                <button>Read More</button>
+              </div>
+              <img
+                src="http://kodeforest.net/html/uoe/extra-images/news1.jpg"
+                alt=""
+              />
+            </div>
+            <div className="flex">
+              <div>
+                <h1>
+                  <span className="text-9xl text-[#D2D2D2]">03</span> DEC
+                </h1>
+                <p>lsdafjldskfldaksfklasdfklsdjflk</p>
+                <p>ksdfalkjl;</p>
+                <button>Read More</button>
+              </div>
+              <img
+                src="http://kodeforest.net/html/uoe/extra-images/news1.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center p-10">
-        <div>
-          <div className="flex">
-            <div>
-              <h1>
-                <span className="text-9xl text-[#D2D2D2]">03</span> DEC
-              </h1>
-              <p>lsdafjldskfldaksfklasdfklsdjflk</p>
-              <p>ksdfalkjl;</p>
-              <button>Read More</button>
-            </div>
-            <img
-              src="http://kodeforest.net/html/uoe/extra-images/news1.jpg"
-              alt=""
-            />
-          </div>
-          <div className="flex">
-            <div>
-              <h1>
-                <span className="text-9xl text-[#D2D2D2]">03</span> DEC
-              </h1>
-              <p>lsdafjldskfldaksfklasdfklsdjflk</p>
-              <p>ksdfalkjl;</p>
-              <button>Read More</button>
-            </div>
-            <img
-              src="http://kodeforest.net/html/uoe/extra-images/news1.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div>
-          <div className="flex">
-            <div>
-              <h1>
-                <span className="text-9xl text-[#D2D2D2]">03</span> DEC
-              </h1>
-              <p>lsdafjldskfldaksfklasdfklsdjflk</p>
-              <p>ksdfalkjl;</p>
-              <button>Read More</button>
-            </div>
-            <img
-              src="http://kodeforest.net/html/uoe/extra-images/news1.jpg"
-              alt=""
-            />
-          </div>
-          <div className="flex">
-            <div>
-              <h1>
-                <span className="text-9xl text-[#D2D2D2]">03</span> DEC
-              </h1>
-              <p>lsdafjldskfldaksfklasdfklsdjflk</p>
-              <p>ksdfalkjl;</p>
-              <button>Read More</button>
-            </div>
-            <img
-              src="http://kodeforest.net/html/uoe/extra-images/news1.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </div>
+    </>
   );
 };
 

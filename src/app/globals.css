@@ -1,36 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-@layer components{
-    .max-container{
-        max-width: 1440px;
-        margin: 0 auto;
-    }
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+@layer utilities {
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
 }
 .tab-btn {
-    padding: 10px 20px;
-    border: 2px solid transparent;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    background-color: #ff9900; /* Orange color */
-    color: #ffffff; /* White text color */
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-  }
-  
-  .tab-btn:hover {
-    background-color: #ffae00; /* Lighter orange color on hover */
-  }
-  
-  .tab-active {
-    background-color: #ffffff;
-    color: #1a202c;
-    border-color: #e2e8f0;
-    border-bottom-color: transparent;
-  }
-  
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #ff9900; /* Orange color */
+  color: #ffffff; /* White text color */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.tab-btn:hover {
+  background-color: #ffae00; /* Lighter orange color on hover */
+}
+
+.tab-active {
+  background-color: #ffffff;
+  color: #1a202c;
+  border-color: #e2e8f0;
+  border-bottom-color: transparent;
+}
