@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+@layer components{
+    .max-container{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+.tab-btn {
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #ff9900; /* Orange color */
+    color: #ffffff; /* White text color */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .tab-btn:hover {
+    background-color: #ffae00; /* Lighter orange color on hover */
+  }
+  
+  .tab-active {
+    background-color: #ffffff;
+    color: #1a202c;
+    border-color: #e2e8f0;
+    border-bottom-color: transparent;
+  }
+  
