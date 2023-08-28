@@ -62,25 +62,32 @@ const Faculties = () => {
           subTitle="To help you build your career and accomplish your goal, we are offering 38 undergraduate and master's programs under 6 faculties."
         />
         <div className="flex flex-wrap justify-center gap-4">
-  {facultyData.map((faculty) => (
-    <div key={faculty.id} className="card w-96 bg-base-100 shadow-md hover:shadow-xl relative flex flex-col">
-      <figure className="relative">
-        <Image src={faculty.imgUrl} alt={faculty.name} height={500} width={500}
-        layout="responsive"/>
-      </figure>
-      <div className="card-body flex flex-col justify-between flex-grow">
-        <div>
-          <h2 className="card-title">{faculty.name}</h2>
-          <p className="mt-2 flex-grow">{faculty.description}</p>
+          {facultyData.map((faculty) => (
+            <div
+              key={faculty.id}
+              className="card w-96 bg-base-100 shadow-md hover:shadow-xl relative flex flex-col"
+            >
+              <figure className="relative">
+                <Image
+                  src={faculty.imgUrl}
+                  alt={faculty.name}
+                  height={500}
+                  width={500}
+                  layout="responsive"
+                />
+              </figure>
+              <div className="card-body flex flex-col justify-between flex-grow">
+                <div>
+                  <h2 className="card-title">{faculty.name}</h2>
+                  <p className="mt-2 flex-grow">{faculty.description}</p>
+                </div>
+                <div className="mt-4">
+                  <ActionBtn link="#" text="Apply Now" />
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-        <div className="mt-4">
-          <ActionBtn link="#" text="Apply Now" />
-        </div>
-      </div>
-    </div>
-  ))}
-</div>
-
       </div>
     </>
   );

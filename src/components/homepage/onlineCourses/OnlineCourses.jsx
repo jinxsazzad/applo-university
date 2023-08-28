@@ -23,7 +23,7 @@ const OnlineCourses = () => {
               style="center"
             />
             <div className="flex justify-center mb-1">
-              <div className="flex space-x-2 shadow-md justify-center items-center">
+              <div className="flex w-screen justify-center items-center">
                 {tabs.map((tab) => (
                   <button
                     key={tab.id}

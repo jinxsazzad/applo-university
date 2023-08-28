@@ -47,14 +47,16 @@
   padding: 10px 20px;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   font-weight: 700;
+  border-bottom: white 2px solid;
+  margin: 1px;
 }
 
 .tab-btn:hover {
-  background-color: orangered;
-  color: white;
+  color: #ffae00;
+  border-bottom: #ffae00 2px solid;
 }
 
 .tab-active {
-  background-color: #ffae00;
-  color: #1a202c;
+  color: #ffae00;
+  border-bottom: #ffae00 2px solid;
 }

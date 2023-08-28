@@ -1,9 +1,13 @@
 "use client";
+import Alumni from "@/components/homepage/Alumni";
 import Faculties from "@/components/homepage/Faculties";
 import Features from "@/components/homepage/Features";
 import Hero from "@/components/homepage/Hero";
+import ImageGallery from "@/components/homepage/ImageGallery";
 import OnlineCourses from "@/components/homepage/onlineCourses/OnlineCourses";
 import ParallaxSec from "@/components/homepage/ParallaxSec";
+import PromotionOne from "@/components/homepage/PromotionOne";
+import Testimonial from "@/components/homepage/Testimonial";
 import Welcome from "@/components/homepage/Welcome";
 import { useState } from "react";
 
@@ -95,70 +99,22 @@ const Home = () => {
       <section className="bg-bg-primary">
         <OnlineCourses />
       </section>
-      <>
-        <div className="flex justify-between items-center p-10 bg-bg-secondary">
-          <div>
-            <div className="flex">
-              <div>
-                <h1>
-                  <span className="text-9xl text-[#D2D2D2]">03</span> DEC
-                </h1>
-                <p>lsdafjldskfldaksfklasdfklsdjflk</p>
-                <p>ksdfalkjl;</p>
-                <button>Read More</button>
-              </div>
-              <img
-                src="http://kodeforest.net/html/uoe/extra-images/news1.jpg"
-                alt=""
-              />
-            </div>
-            <div className="flex">
-              <div>
-                <h1>
-                  <span className="text-9xl text-[#D2D2D2]">03</span> DEC
-                </h1>
-                <p>lsdafjldskfldaksfklasdfklsdjflk</p>
-                <p>ksdfalkjl;</p>
-                <button>Read More</button>
-              </div>
-              <img
-                src="http://kodeforest.net/html/uoe/extra-images/news1.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div>
-            <div className="flex">
-              <div>
-                <h1>
-                  <span className="text-9xl text-[#D2D2D2]">03</span> DEC
-                </h1>
-                <p>lsdafjldskfldaksfklasdfklsdjflk</p>
-                <p>ksdfalkjl;</p>
-                <button>Read More</button>
-              </div>
-              <img
-                src="http://kodeforest.net/html/uoe/extra-images/news1.jpg"
-                alt=""
-              />
-            </div>
-            <div className="flex">
-              <div>
-                <h1>
-                  <span className="text-9xl text-[#D2D2D2]">03</span> DEC
-                </h1>
-                <p>lsdafjldskfldaksfklasdfklsdjflk</p>
-                <p>ksdfalkjl;</p>
-                <button>Read More</button>
-              </div>
-              <img
-                src="http://kodeforest.net/html/uoe/extra-images/news1.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </>
+      {/* Image Gallery */}
+      <section className="bg-bg-secondary">
+        <ImageGallery/>
+      </section>
+      {/* Promotions Section One */}
+      <section>
+        <PromotionOne/>
+      </section>
+      {/* Alumni Section */}
+      <section className="bg-bg-primary">
+        <Alumni/>
+      </section>
+      {/* Testimonial Section */}
+      <section>
+        <Testimonial/>
+      </section>
     </>
   );
 };
