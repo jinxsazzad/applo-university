@@ -45,21 +45,16 @@
 }
 .tab-btn {
   padding: 10px 20px;
-  border: 2px solid transparent;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  background-color: #ff9900; /* Orange color */
-  color: #ffffff; /* White text color */
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  font-weight: 700;
 }
 
 .tab-btn:hover {
-  background-color: #ffae00; /* Lighter orange color on hover */
+  background-color: orangered;
+  color: white;
 }
 
 .tab-active {
-  background-color: #ffffff;
+  background-color: #ffae00;
   color: #1a202c;
-  border-color: #e2e8f0;
-  border-bottom-color: transparent;
 }

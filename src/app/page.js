@@ -1,6 +1,8 @@
 "use client";
+import Faculties from "@/components/homepage/Faculties";
 import Features from "@/components/homepage/Features";
 import Hero from "@/components/homepage/Hero";
+import OnlineCourses from "@/components/homepage/onlineCourses/OnlineCourses";
 import ParallaxSec from "@/components/homepage/ParallaxSec";
 import Welcome from "@/components/homepage/Welcome";
 import { useState } from "react";
@@ -57,9 +59,12 @@ const facultyData = [
   },
 ];
 const tabs = [
-  { id: 1, title: "Tab 1", content: "Content for Tab 1" },
-  { id: 2, title: "Tab 2", content: "Content for Tab 2" },
-  { id: 3, title: "Tab 3", content: "Content for Tab 3" },
+  { id: 1, title: "All", content: "Content for Tab 1" },
+  { id: 2, title: "Accounting", content: "Content for Tab 2" },
+  { id: 3, title: "Economics", content: "Content for Tab 3" },
+  { id: 4, title: "Finance", content: "Content for Tab 3" },
+  { id: 5, title: "Technologies", content: "Content for Tab 3" },
+  { id: 6, title: "Others", content: "Content for Tab 3" },
 ];
 
 const Home = () => {
@@ -71,143 +76,27 @@ const Home = () => {
         <Hero />
       </section>
       {/* Features Section */}
-      <section>
+      <section className="bg-bg-primary">
         <Features />
       </section>
       {/* Welcome Section */}
-      <section>
+      <section className="bg-bg-secondary">
         <Welcome />
+      </section>
+      {/* Faculties Sections */}
+      <section className="bg-bg-primary">
+        <Faculties />
       </section>
       {/* Parallax Sections */}
       <section>
         <ParallaxSec />
       </section>
-      {/* Faculties Sections */}
+      {/* Online Courses Sections */}
+      <section className="bg-bg-primary">
+        <OnlineCourses />
+      </section>
       <>
-        {/* Section 4 */}
-        <div>
-          <h1 className="text-center font-bold text-4xl">Our Faculties</h1>
-          <div className="flex flex-wrap gap-10 mx-auto w-[90%]">
-            {facultyData.map((faculty) => (
-              <>
-                <div className="card w-96 bg-base-100 shadow-md hover:shadow-xl relative">
-                  <div className="h-20 bg-gray-400 z-50 absolute mt-28 end-0">
-                    {faculty?.date}
-                  </div>
-                  <figure className="relative">
-                    <img src={faculty.imgurl} alt="Shoes" />
-                  </figure>
-                  <div className="card-body">
-                    <h2 className="card-title">{faculty.name}</h2>
-                    <p>{faculty.description}</p>
-                    <div className="card-actions">
-                      <button className="btn btn-primary">Buy Now</button>
-                    </div>
-                  </div>
-                </div>
-              </>
-            ))}
-          </div>
-        </div>
-        {/* Section 5 */}
-        <div>
-          <h1 className="text-center font-bold text-4xl">Our Faculties</h1>
-          <div className="flex flex-wrap gap-10 mx-auto w-[90%]">
-            {facultyData.map((faculty) => (
-              <>
-                <div className="card w-96 bg-base-100 shadow-md hover:shadow-xl relative">
-                  <div className="h-20 bg-gray-400 z-50 absolute mt-28 end-0">
-                    {faculty?.date}
-                  </div>
-                  <figure className="relative">
-                    <img src={faculty.imgurl} alt="Shoes" />
-                  </figure>
-                  <div className="card-body">
-                    <h2 className="card-title">{faculty.name}</h2>
-                    <p>{faculty.description}</p>
-                    <div className="card-actions">
-                      <button className="btn btn-primary">Buy Now</button>
-                    </div>
-                  </div>
-                </div>
-              </>
-            ))}
-          </div>
-        </div>
-        <div>
-          <div className="py-10 bg-gray-100">
-            <div className="max-w-screen-lg mx-auto">
-              <div className="flex justify-center mb-8">
-                <div className="flex space-x-4">
-                  {tabs.map((tab) => (
-                    <button
-                      key={tab.id}
-                      className={`tab-btn ${
-                        activeTab.id === tab.id ? "tab-active" : ""
-                      }`}
-                      onClick={() => setActiveTab(tab)}
-                    >
-                      {tab.title}
-                    </button>
-                  ))}
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-2xl font-bold mb-4">{activeTab.title}</h3>
-                {activeTab.id === 1 && (
-                  <div className="flex flex-wrap gap-10">
-                    {facultyData.map((faculty) => (
-                      <div key={faculty.id}>
-                        <div className="card w-96 bg-base-100 shadow-md hover:shadow-xl relative">
-                          <div className="h-20 bg-gray-400 z-50 absolute mt-28 end-0">
-                            {faculty?.date}
-                          </div>
-                          <figure className="relative">
-                            <img src={faculty.imgurl} alt="Shoes" />
-                          </figure>
-                          <div className="card-body">
-                            <h2 className="card-title">{faculty.name}</h2>
-                            <p>{faculty.description}</p>
-                            <div className="card-actions">
-                              <button className="btn btn-primary">
-                                Buy Now
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                )}
-                {activeTab.id === 2 && (
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {facultyData.map((faculty) => (
-                      <div
-                        key={faculty.id}
-                        className="bg-white rounded-lg shadow-md p-4"
-                      >
-                        {/* Faculty card content */}
-                      </div>
-                    ))}
-                  </div>
-                )}
-                {activeTab.id === 3 && (
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {facultyData.map((faculty) => (
-                      <div
-                        key={faculty.id}
-                        className="bg-white rounded-lg shadow-md p-4"
-                      >
-                        {/* Faculty card content */}
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex justify-between items-center p-10">
+        <div className="flex justify-between items-center p-10 bg-bg-secondary">
           <div>
             <div className="flex">
               <div>

@@ -22,6 +22,8 @@ module.exports = {
         primary: "#2E3094",
         secondary: "#FFC150",
         "slate-gray": "#6D6D6D",
+        "bg-primary":"#FFFFFF",
+        "bg-secondary":"#F8F8F8",
         "pale-blue": "#F5F6FF",
         "white-400": "rgba(255, 255, 255, 0.80)",
       },

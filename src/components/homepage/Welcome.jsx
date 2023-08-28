@@ -43,7 +43,7 @@ const Welcome = () => {
   ];
   return (
     <>
-      <div className="max-container flex justify-between items-center flex-col md:flex-row gap-4">
+      <div className="max-container my-8 py-8 flex justify-between items-center flex-col md:flex-row gap-4">
         <div className="w-3/5">
           <div>
             <SectionTitle
@@ -54,14 +54,14 @@ const Welcome = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-3">
             {offers.map(({ id, icon, heading, text }) => (
-              <div key={id} className="flex justify-between items-start gap-4 shadow-md p-2">
+              <div key={id} className="flex justify-between items-start gap-4 hover:shadow-md shadow-lg p-2">
                 <div className="bg-primary rounded-full p-5 mt-6 text-white">{icon}
                 </div>
                 <div>
                   <h1 className="mt-5 text-xl leading-normal font-semibold">
                     {heading}
                   </h1>
-                  <p className="mt-3 break-words text-lg leading-normal text-slate-gray">
+                  <p className="mt-3 pb-2 break-words text-lg leading-normal text-slate-gray">
                     {text}
                   </p>
                 </div>
@@ -73,7 +73,7 @@ const Welcome = () => {
           className="bg-cover bg-no-repeat bg-center w-full md:w-2/5"
           style={{
             backgroundImage: `url('http://kodeforest.net/html/uoe/extra-images/bg-1.jpg')`,
-            height: "90vh", // Set the height as needed
+            height: "100vh", // Set the height as needed
           }}
         >
           {/* Your content goes here */}
