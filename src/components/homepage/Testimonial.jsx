@@ -17,7 +17,7 @@ const Testimonial = () => {
   return (
     <>
       <div className="max-container">
-        <SectionTitle title="Alumni" subTitle="Our Alumni are our pride as they are engaged in building the world through national and International contributions" style="center" />
+        <SectionTitle title="Visitors Says About Us" subTitle="National and International scholars, Business leaders, Entrepreneurs, Dignitaries visited us to share experiences, explore opportunities, collaborate and give guidance to the students" style="center" />
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
@@ -28,8 +28,8 @@ const Testimonial = () => {
           autoplay={{ delay: 4000 }} // Set autoplay delay in milliseconds
           className="mySwiper"
         >
-          {testimonials.map((message) => (
-            <SwiperSlide key={0}>
+          {testimonials.map((message,index) => (
+            <SwiperSlide key={index}>
               <div className=" md:mx-12 lg:mx-48 mb-16">
                 <div className="card w-auto rounded-md shadow-xl text-black h-full bg-[#F5F7F9]">
                   <figure className="mt-4">

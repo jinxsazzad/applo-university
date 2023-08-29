@@ -36,16 +36,15 @@ const Features = () => {
   ];
   return (
     <>
-      <div className="flex flex-col md:flex-row md:gap-2 justify-between items-center max-container mb-6">
+      <div className="flex flex-col gap-1 md:flex-row md:gap-2 justify-center items-center max-container">
         {features.map(({ id, icon, heading, subText }) => (
           <div
             key={id}
-            className=" flex flex-col justify-center items-center text-center shadow-md hover:shadow-sm
-            hover:bg-[#24CCC0] bg-[#F8F8F8] p-6"
+            className="flex flex-col justify-center items-center text-center shadow-md md:hover:shadow-sm bg-bg-secondary p-6"
           >
-            <div className="text-3xl">{icon}</div>
-            <h3 className="text-3xl font-semibold">{heading}</h3>
-            <p className="text-[#777790]">{subText}</p>
+            <div className="text-4xl text-primary">{icon}</div>
+            <h3 className="text-3xl font-semibold whitespace-nowrap">{heading}</h3>
+            <p className="text-[#777790] text-sm">{subText}</p>
           </div>
         ))}
       </div>

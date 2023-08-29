@@ -11,7 +11,7 @@ const Hero = () => {
   const heroContent = [
     {
       id: 1,
-      imgUrl: "http://kodeforest.net/html/uoe/extra-images/slider1.jpg",
+      imgUrl: "https://daffodilvarsity.edu.bd/images/slider/7266d5d4d9ed0564d37caed885fc7282.webp",
       topHeading: "The Best Learning Institution",
       mainHeading: "Welcome To Our University",
       subtext: "We Believe There Is Nothing More Important Than Education",
@@ -35,7 +35,7 @@ const Hero = () => {
     },
   ];
   return (
-    <div className="z-40">
+    <>
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -51,21 +51,22 @@ const Hero = () => {
         {heroContent.map(
           ({ id, imgUrl, topHeading, mainHeading, subtext, btnText }) => (
             <SwiperSlide key={id}>
-              <div className="relative">
-                <Image
-                  src={imgUrl}
-                  alt="Hero-Section-Image"
-                  layout="responsive"
-                  width={1920}
-                  height={500}
-                />
+              <div className="relative ">
+                <div className=" h-[55vh] md:h-[80vh] bg-fixed bg-center bg-no-repeat bg-cover"
+                style={{
+                  backgroundImage:
+                    `url(${imgUrl})`,
+                }}
+                >
+                
+                </div>
                 <div className="absolute inset-0 flex flex-col justify-center items-center p-8 bg-black bg-opacity-50 text-white">
                   <div className="max-container text-center">
-                    <span className="text-xl mb-2">{topHeading}</span>
-                    <h2 className=" uppercase text-3xl font-bold mb-2">
+                    <span className="text-xl mb-2 hidden md:block">{topHeading}</span>
+                    <h2 className=" uppercase text-2xl md:text-3xl font-bold mb-2">
                       {mainHeading}
                     </h2>
-                    <p className="text-lg mb-4">{subtext}</p>
+                    <p className="text-base md:text-lg mb-4">{subtext}</p>
                     <ActionBtn link="#" text={btnText} rounded="full" />
                   </div>
                 </div>
@@ -74,7 +75,7 @@ const Hero = () => {
           )
         )}
       </Swiper>
-    </div>
+    </>
   );
 };
 

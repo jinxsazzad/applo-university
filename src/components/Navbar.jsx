@@ -9,13 +9,13 @@ const Navbar = () => {
     <nav className="bg-base-200">
       <div className=" max-container navbar">
         <div className="navbar-start">
-          <div className="dropdown">
+          <div className="dropdown z-50">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <FaBars />
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 w-52"
             >
               <NavLink />
             </ul>

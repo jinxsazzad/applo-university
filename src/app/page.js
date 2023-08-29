@@ -7,6 +7,7 @@ import ImageGallery from "@/components/homepage/ImageGallery";
 import OnlineCourses from "@/components/homepage/onlineCourses/OnlineCourses";
 import ParallaxSec from "@/components/homepage/ParallaxSec";
 import PromotionOne from "@/components/homepage/PromotionOne";
+import Subscribe from "@/components/homepage/Subscribe";
 import Testimonial from "@/components/homepage/Testimonial";
 import Welcome from "@/components/homepage/Welcome";
 import { useState } from "react";
@@ -101,19 +102,23 @@ const Home = () => {
       </section>
       {/* Image Gallery */}
       <section className="bg-bg-secondary">
-        <ImageGallery/>
+        <ImageGallery />
       </section>
       {/* Promotions Section One */}
       <section>
-        <PromotionOne/>
+        <PromotionOne />
       </section>
       {/* Alumni Section */}
       <section className="bg-bg-primary">
-        <Alumni/>
+        <Alumni />
+      </section>
+      {/* Subscribe Section */}
+      <section>
+        <Subscribe />
       </section>
       {/* Testimonial Section */}
       <section>
-        <Testimonial/>
+        <Testimonial />
       </section>
     </>
   );

@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import { SectionTitle } from "../../shared/Titles";
 import AllCourses from "./AllCourses";
@@ -7,9 +8,6 @@ const tabs = [
   { id: 1, title: "All", content: <AllCourses/> },
   { id: 2, title: "Accounting", content: <AllCourses/> },
   { id: 3, title: "Economics", content: <AllCourses/> },
-  { id: 4, title: "Finance", content: <AllCourses/> },
-  { id: 5, title: "Technologies", content: <AllCourses/> },
-  { id: 6, title: "Others", content: <AllCourses/> },
 ];
 const OnlineCourses = () => {
   const [activeTab, setActiveTab] = useState(tabs[0]);
@@ -23,7 +21,7 @@ const OnlineCourses = () => {
               style="center"
             />
             <div className="flex justify-center mb-1">
-              <div className="flex w-screen justify-center items-center">
+              <div className="flex w-full justify-center items-center">
                 {tabs.map((tab) => (
                   <button
                     key={tab.id}
@@ -38,7 +36,7 @@ const OnlineCourses = () => {
               </div>
             </div>
             <div className="mt-5">
-              <p>{activeTab.content}</p>
+              <div>{activeTab.content}</div>
             </div>
           </div>
         </div>

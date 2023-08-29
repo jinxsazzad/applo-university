@@ -32,9 +32,9 @@ const AllCourses = () => {
   return (
     <div>
       <div className="flex flex-wrap justify-center gap-10 ">
-        {facultyData.map((faculty) => (
+        {facultyData.map((faculty ,index) => (
           <>
-            <div className="card rounded-md card-compact w-96 bg-base-100 shadow-md hover:shadow-xl relative">
+            <div key={index} className="card rounded-md card-compact w-96 bg-base-100 shadow-md hover:shadow-xl relative">
               <div className=" bg-primary rounded-b-full h-16 w-16 p-4 z-50 absolute end-0 flex items-center justify-center">
                 <p className="text-xl font-semibold text-white">50$</p>
               </div>

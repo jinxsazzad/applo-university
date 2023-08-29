@@ -5,27 +5,26 @@ const ParallaxSec = () => {
   return (
     <>
       <div
-        className="relative h-[70vh] flex items-center justify-center bg-fixed bg-center bg-no-repeat bg-cover"
+        className="relative p-4 md:h-[70vh] flex items-center justify-center bg-fixed bg-center bg-no-repeat bg-cover"
         style={{
           backgroundImage:
             "url('	https://daffodilvarsity.edu.bd/template/images/bg_3.webp')",
         }}
       >
-        {/* Overlay with gradient color */}
         <div className="absolute inset-0 bg-slate-700 bg-opacity-50"></div>
 
         <div className="relative max-container">
-          <div className="h-[40vh]">
-            <div className="h-full flex justify-center items-center gap-10">
+          <div className=" md:h-[40vh]">
+            <div className="h-full flex flex-col md:flex-row justify-center items-center gap-10">
               <iframe
-                className="w-2/4 h-full"
+                className="w-full md:w-2/4 h-full"
                 src="https://www.youtube.com/embed/your-video-id"
                 title="Video"
                 allowFullScreen
               ></iframe>
-              <div className="w-2/4 text-white">
-                <h2 className="text-4xl font-bold mb-4">Daffodil University</h2>
-                <p className="text-lg mb-7">
+              <div className=" md:w-2/4 text-white">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Daffodil University</h2>
+                <p className=" md:text-lg mb-7">
                   Being established in 2002, Daffodil International University
                   has become a prominent private university in Bangladesh. Our
                   150 Acre campus is full of life and positive energy, fostering

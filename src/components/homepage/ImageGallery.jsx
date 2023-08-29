@@ -7,10 +7,10 @@ const ImageGallery = () => {
   return (
     <>
       <SectionTitle title="OUR GALLERY" subTitle="Student gallery of the year past graduated phaseouts" style="center" />
-      <div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-1 max-container pb-8">
-        {images.map(() => (
+      <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-1 max-container pb-8">
+        {images.map((i,index) => (
           <Image
-            key={0}
+            key={index}
             height={300}
             width={300}
             layout="responsive"

@@ -7,7 +7,7 @@ const NavLink = () => {
       <li tabIndex={0}>
         <details>
           <summary>Admissions</summary>
-          <ul className="p-2">
+          <ul className="p-2 rounded-none">
             <li>
               <Link href="/">Submenu 1</Link>
             </li>
@@ -20,7 +20,7 @@ const NavLink = () => {
       <li tabIndex={0}>
         <details>
           <summary>Academics</summary>
-          <ul className="p-2">
+          <ul className="p-2 rounded-none">
             <li>
               <Link href="/">Submenu 1</Link>
             </li>
@@ -33,7 +33,7 @@ const NavLink = () => {
       <li tabIndex={0}>
         <details>
           <summary>Campus</summary>
-          <ul className="p-2">
+          <ul className="p-2 rounded-none">
             <li>
               <Link href="/">Submenu 1</Link>
             </li>
@@ -46,7 +46,7 @@ const NavLink = () => {
       <li tabIndex={0}>
         <details>
           <summary>Research</summary>
-          <ul className="p-2">
+          <ul className="p-2 rounded-none">
             <li>
               <Link href="/">Submenu 1</Link>
             </li>
@@ -59,7 +59,7 @@ const NavLink = () => {
       <li tabIndex={0}>
         <details>
           <summary>International</summary>
-          <ul className="p-2">
+          <ul className="p-2 rounded-none">
             <li>
               <Link href="/">Submenu 1</Link>
             </li>
@@ -72,7 +72,7 @@ const NavLink = () => {
       <li tabIndex={0}>
         <details>
           <summary>About</summary>
-          <ul className="p-2">
+          <ul className="p-2 rounded-none">
             <li>
               <Link href="/">Submenu 1</Link>
             </li>

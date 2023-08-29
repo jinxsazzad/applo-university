@@ -45,8 +45,8 @@ const Alumni = () => {
           modules={[Pagination]}
           className="mySwiper"
         >
-          {alumni.map(() => (
-            <SwiperSlide key={0} className="mb-10">
+          {alumni.map((i,index) => (
+            <SwiperSlide key={index} className="mb-10">
                 <div className="card card-compact bg-base-200 shadow-sm">
                   <figure>
                     <Image

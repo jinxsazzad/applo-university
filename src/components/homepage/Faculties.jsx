@@ -65,7 +65,7 @@ const Faculties = () => {
           {facultyData.map((faculty) => (
             <div
               key={faculty.id}
-              className="card w-96 bg-base-100 shadow-md hover:shadow-xl relative flex flex-col"
+              className="card card-compact w-96 bg-base-100 shadow-md hover:shadow-xl relative flex flex-col"
             >
               <figure className="relative">
                 <Image
@@ -81,7 +81,7 @@ const Faculties = () => {
                   <h2 className="card-title">{faculty.name}</h2>
                   <p className="mt-2 flex-grow">{faculty.description}</p>
                 </div>
-                <div className="mt-4">
+                <div className="mt-2">
                   <ActionBtn link="#" text="Apply Now" />
                 </div>
               </div>
