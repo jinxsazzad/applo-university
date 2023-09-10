@@ -89,7 +89,7 @@ const Footer = () => {
           Email : Info@info.com <br />
         </div>
       </footer>
-      <footer className="footer  bg-primary text-white px-10 py-4 border-t text-base-content border-base-300">
+      <footer className="footer  bg-primary text-white px-10 py-4 border-t border-base-300">
         <div className="items-center grid-flow-col">
           <Link href="/" className=" cursor-pointer text-xl">
             <Image

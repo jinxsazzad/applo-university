@@ -67,9 +67,6 @@ const tabs = [
   { id: 1, title: "All", content: "Content for Tab 1" },
   { id: 2, title: "Accounting", content: "Content for Tab 2" },
   { id: 3, title: "Economics", content: "Content for Tab 3" },
-  { id: 4, title: "Finance", content: "Content for Tab 3" },
-  { id: 5, title: "Technologies", content: "Content for Tab 3" },
-  { id: 6, title: "Others", content: "Content for Tab 3" },
 ];
 
 const Home = () => {
@@ -81,11 +78,11 @@ const Home = () => {
         <Hero />
       </section>
       {/* Features Section */}
-      <section className="bg-bg-primary">
+      <section className="bg-primary">
         <Features />
       </section>
       {/* Welcome Section */}
-      <section className="bg-bg-secondary">
+      <section className="">
         <Welcome />
       </section>
       {/* Faculties Sections */}

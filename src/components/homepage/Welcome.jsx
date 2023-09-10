@@ -54,11 +54,11 @@ const Welcome = () => {
           to think, learn and grow."
               />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 h-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 h-full">
             {offers.map(({ id, icon, heading, text }) => (
               <div
                 key={id}
-                className="flex justify-between items-start gap-4 hover:shadow-md shadow-lg p-2"
+                className="flex justify-between items-start gap-4 border-b-4 border-b-gray-400 hover:border-b-orange-600 shadow-sm p-2 bg-bg-secondary"
               >
                 <div className="bg-primary rounded-full p-5 mt-6 text-white">
                   {icon}
